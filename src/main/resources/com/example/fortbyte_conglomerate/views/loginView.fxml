@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="720.0" prefWidth="1080.0" styleClass="colorBackground" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fortbyte_conglomerate.controller.LoginController">
+   <children>
+      <AnchorPane fx:id="register" layoutX="577.0" layoutY="144.0" prefHeight="426.0" prefWidth="420.0" style="-fx-background-radius: 60;" styleClass="colorBackground" stylesheets="@../css/credentialsBG.css">
+         <children>
+            <TextField fx:id="mailRegister" alignment="BOTTOM_LEFT" layoutX="49.0" layoutY="14.0" prefHeight="62.0" prefWidth="320.0" promptText="Enter Mail" style="-fx-background-radius: 20; -fx-background-color: transparent; -fx-border-color: #3b3b3b; -fx-border-width: 0px 0px 4px 0px;" styleClass="text-input" stylesheets="@../css/credentialsTextInput.css">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordRegister" alignment="BOTTOM_LEFT" layoutX="49.0" layoutY="76.0" prefHeight="62.0" prefWidth="320.0" promptText="Enter Password" style="-fx-background-radius: 20; -fx-background-color: transparent; -fx-border-color: #3b3b3b; -fx-border-width: 0px 0px 4px 0px;" styleClass="text-input" stylesheets="@../css/credentialsTextInput.css">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </PasswordField>
+            <JFXCheckBox fx:id="termsCheck" checkedColor="#d3d3d3" layoutX="14.0" layoutY="362.0" prefHeight="39.0" prefWidth="220.0" text="Agree Terms and Conditions" textFill="#9a9a9a" unCheckedColor="#616161" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXButton layoutX="254.0" layoutY="361.0" onAction="#handleRegister" prefHeight="41.0" prefWidth="120.0" styleClass="testbutton" stylesheets="@../css/registerButton.css" text="Register" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="firstnameRegister" alignment="BOTTOM_LEFT" layoutX="49.0" layoutY="138.0" prefHeight="62.0" prefWidth="320.0" promptText="Enter Firstname" style="-fx-background-radius: 20; -fx-background-color: transparent; -fx-border-color: #3b3b3b; -fx-border-width: 0px 0px 4px 0px;" styleClass="text-input" stylesheets="@../css/credentialsTextInput.css">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lastnameRegister" alignment="BOTTOM_LEFT" layoutX="50.0" layoutY="200.0" prefHeight="62.0" prefWidth="320.0" promptText="Enter Lastname" style="-fx-background-radius: 20; -fx-background-color: transparent; -fx-border-color: #3b3b3b; -fx-border-width: 0px 0px 4px 0px;" styleClass="text-input" stylesheets="@../css/credentialsTextInput.css">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="errorsRegister" alignment="BOTTOM_LEFT" editable="false" layoutX="54.0" layoutY="256.0" prefHeight="62.0" prefWidth="320.0" style="-fx-background-color: transparent;" styleClass="text-input" stylesheets="@../css/errorText.css" text="err">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="login" layoutX="85.0" layoutY="147.0" prefHeight="426.0" prefWidth="420.0" style="-fx-background-radius: 40;" styleClass="colorBackground" stylesheets="@../css/credentialsBG.css">
+         <children>
+            <TextField fx:id="mailLogin" alignment="BOTTOM_LEFT" layoutX="27.0" layoutY="288.0" prefHeight="62.0" prefWidth="320.0" promptText="Enter Mail" style="-fx-background-radius: 20; -fx-background-color: transparent; -fx-border-color: #3b3b3b; -fx-border-width: 0px 0px 4px 0px;" styleClass="text-input" stylesheets="@../css/credentialsTextInput.css">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordLogin" alignment="BOTTOM_LEFT" layoutX="27.0" layoutY="350.0" prefHeight="62.0" prefWidth="320.0" promptText="Enter Password" style="-fx-background-radius: 20; -fx-background-color: transparent; -fx-border-color: #3b3b3b; -fx-border-width: 0px 0px 4px 0px;" styleClass="text-input" stylesheets="@../css/credentialsTextInput.css">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </PasswordField>
+            <JFXButton layoutX="32.0" layoutY="202.0" onAction="#handleLogin" prefHeight="39.0" prefWidth="94.0" styleClass="testbutton" stylesheets="@../css/registerButton.css" text="Login" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="errorsLogin" alignment="TOP_LEFT" editable="false" layoutX="32.0" layoutY="243.0" prefHeight="62.0" prefWidth="320.0" style="-fx-background-color: transparent;" styleClass="text-input" stylesheets="@../css/errorText.css" text="err">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="sidebar" layoutX="450.0" layoutY="275.0" prefHeight="200.0" prefWidth="181.0" style="-fx-background-radius: 60;" styleClass="colorBackground" stylesheets="@../css/background.css">
+         <children>
+            <JFXButton layoutX="131.0" layoutY="14.0" onAction="#closeProgram" prefHeight="24.0" prefWidth="23.0" text="X" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="24.0" layoutY="55.0" onAction="#openRegisterMenu" prefHeight="90.0" prefWidth="134.0" styleClass="testbutton" stylesheets="@../css/registerButton.css" text="Don't have an account?" textAlignment="CENTER" underline="true" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

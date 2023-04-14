@@ -1,0 +1,6 @@
+.text{
+    -fx-text-fill: #ffb16d;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-blend-mode: hard-light;
+}

@@ -1,0 +1,8 @@
+.anchor-pane {
+    -fx-background-color: linear-gradient(to left top, rgb(3, 0, 10) 0%, rgb(17, 7, 38) 33%, rgb(30, 18, 52) 66%, rgb(42, 33, 56) 100%);
+    -fx-background-radius: 30px;
+}
+.shadowed-control {
+    -fx-effect: dropshadow(three-pass-box, rgba(8, 0, 24, 0.9), 17, 0, 12, 12),
+                innershadow(three-pass-box, rgb(255, 255, 255), 10, 1, 0, 0);
+}

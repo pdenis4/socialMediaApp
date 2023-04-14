@@ -1,0 +1,14 @@
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-background-radius: 15px;
+    -fx-blend-mode: hard-light;
+    -fx-text-fill: #ffbd64;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: left;
+}
+
+.list-cell:selected {
+    -fx-background-color: #ffb871;
+
+}

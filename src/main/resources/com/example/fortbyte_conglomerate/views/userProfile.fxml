@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="459.0" prefWidth="575.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fortbyte_conglomerate.controller.ProfileController">
+   <children>
+      <VBox prefHeight="459.0" prefWidth="569.0">
+         <children>
+            <Region prefHeight="13.0" prefWidth="600.0" />
+            <HBox prefHeight="100.0" prefWidth="242.0">
+               <children>
+                  <Region prefHeight="100.0" prefWidth="46.0" />
+                  <ImageView fitHeight="97.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user.png" />
+                     </image>
+                  </ImageView>
+                  <Region prefHeight="100.0" prefWidth="122.0" />
+                  <VBox prefHeight="100.0" prefWidth="359.0">
+                     <children>
+                        <Region prefHeight="72.0" prefWidth="359.0" />
+                        <HBox prefHeight="53.0" prefWidth="359.0">
+                           <children>
+                              <Label fx:id="firstNameLabel" alignment="BOTTOM_LEFT" prefHeight="41.0" prefWidth="201.0" style="-fx-font-weight: bold;" text="Firstname" textFill="#ffbc74">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lastNameLabel" alignment="BOTTOM_LEFT" prefHeight="58.0" prefWidth="200.0" style="-fx-font-weight: bold;" text="LastName" textFill="#ffc36a">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Region prefHeight="31.0" prefWidth="569.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Region prefHeight="100.0" prefWidth="87.0" />
+                  <Button fx:id="addFriendButton" mnemonicParsing="false" onAction="#handleAddFriendButton" prefHeight="46.0" prefWidth="53.0" stylesheets="@../css/transparentButtons.css">
+                     <graphic>
+                        <ImageView fitHeight="64.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Region prefHeight="100.0" prefWidth="81.0" />
+                  <Button fx:id="cancelFriendRequestButton" mnemonicParsing="false" onAction="#handleCancelFriendRequestButton" prefHeight="72.0" prefWidth="74.0" stylesheets="@../css/transparentButtons.css">
+                     <graphic>
+                        <ImageView fitHeight="72.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/canceladd.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Region prefHeight="100.0" prefWidth="85.0" />
+                  <Button fx:id="removeFriendButton" mnemonicParsing="false" onAction="#handleRemoveFriendButton" prefHeight="73.0" prefWidth="84.0" stylesheets="@../css/transparentButtons.css">
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/minus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Region prefHeight="21.0" prefWidth="569.0" />
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="569.0">
+               <children>
+                  <Button fx:id="acceptFriendRequestButton" mnemonicParsing="false" onAction="#handleAcceptFriendRequestButton" prefHeight="77.0" prefWidth="80.0" stylesheets="@../css/transparentButtons.css">
+                     <graphic>
+                        <ImageView fitHeight="71.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tick.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Region prefHeight="80.0" prefWidth="152.0" />
+                  <Button fx:id="declineFriendRequestButton" mnemonicParsing="false" onAction="#handleDeclineFriendRequestButton" prefHeight="81.0" prefWidth="84.0" stylesheets="@../css/transparentButtons.css">
+                     <graphic>
+                        <ImageView fitHeight="71.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/cross.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Region prefHeight="96.0" prefWidth="539.0" />
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Region prefHeight="23.0" prefWidth="81.0" />
+                        <Button fx:id="messengerButton" mnemonicParsing="false" onAction="#handleMessenger" stylesheets="@../css/transparentButtons.css">
+                           <graphic>
+                              <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/send.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.SearchableComboBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="colorBackground" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fortbyte_conglomerate.controller.UserController">
+   <children>
+      <AnchorPane layoutX="34.0" layoutY="24.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/blockStyle.css">
+         <children>
+            <VBox alignment="CENTER" layoutX="9.0" prefHeight="169.0" prefWidth="183.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="mailBase" fill="#9100ae" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-underline: true;" text="Mail:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="scene2mail" fill="#ff7333" stroke="#9848a8" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: italic;" text="mail" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="firstNameBase" fill="#9100ae" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-underline: true;" text="FName:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="scene2firstname" fill="#ff9357" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="firstname" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="lastNameBase" fill="#9100ae" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-underline: true;" text="LName:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="scene2lastname" fill="#ff9f50" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="lastname" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <styleClass>
+            <String fx:value="anchor-pane" />
+            <String fx:value="shadowed-control" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane fx:id="subsceneAnchor" layoutX="255.0" layoutY="234.0" prefHeight="472.0" prefWidth="570.0" stylesheets="@../css/blockStyle.css">
+         <styleClass>
+            <String fx:value="anchor-pane" />
+            <String fx:value="shadowed-control" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane layoutX="34.0" layoutY="238.0" prefHeight="472.0" prefWidth="200.0" stylesheets="@../css/blockStyle.css">
+         <children>
+            <VBox layoutX="14.0" layoutY="11.0" prefHeight="443.0" prefWidth="172.0">
+               <children>
+                  <TextField fx:id="friendsSearch" prefHeight="39.0" prefWidth="172.0" promptText="Search friend" style="-fx-background-color: transparent;" styleClass="text-input" stylesheets="@../css/credentialsTextInput.css">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <JFXListView fx:id="friendsList" prefHeight="381.0" prefWidth="172.0" style="-fx-background-color: transparent;" styleClass="list-cell" stylesheets="@../css/cellStyle.css" />
+               </children>
+            </VBox>
+         </children>
+         <styleClass>
+            <String fx:value="anchor-pane" />
+            <String fx:value="shadowed-control" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane layoutX="851.0" layoutY="506.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/blockStyle.css">
+         <styleClass>
+            <String fx:value="anchor-pane" />
+            <String fx:value="shadowed-control" />
+         </styleClass>
+         <children>
+            <JFXButton fx:id="logoutButton" layoutX="47.0" layoutY="80.0" onAction="#handleLogout" styleClass="testbutton" stylesheets="@../css/registerButton.css" text="Logout" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="851.0" layoutY="24.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/blockStyle.css">
+         <styleClass>
+            <String fx:value="anchor-pane" />
+            <String fx:value="shadowed-control" />
+         </styleClass>
+         <children>
+            <JFXButton fx:id="notificationsButton" layoutX="33.0" layoutY="66.0" onAction="#handleNotifications" prefHeight="69.0" prefWidth="135.0" styleClass="testbutton" stylesheets="@../css/registerButton.css" text="Friend Requests" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="22.0" />
+               </font></JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="255.0" layoutY="75.0" prefHeight="99.0" prefWidth="570.0" stylesheets="@../css/blockStyle.css">
+         <styleClass>
+            <String fx:value="shadowed-control" />
+            <String fx:value="anchor-pane" />
+         </styleClass>
+         <children>
+            <SearchableComboBox fx:id="searchableComboBox" layoutX="52.0" layoutY="30.0" prefHeight="39.0" prefWidth="451.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="851.0" layoutY="260.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/blockStyle.css">
+         <styleClass>
+            <String fx:value="anchor-pane" />
+            <String fx:value="shadowed-control" />
+         </styleClass>
+         <children>
+            <JFXButton layoutX="36.0" layoutY="80.0" styleClass="testbutton" stylesheets="@../css/registerButton.css" text="\$Donate$" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

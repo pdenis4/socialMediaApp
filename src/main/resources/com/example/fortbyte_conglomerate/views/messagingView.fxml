@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="519.0" style="-fx-background-color: transparent; -fx-blend-mode: hard-light;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fortbyte_conglomerate.controller.MessagerController">
+   <children>
+      <VBox alignment="CENTER" layoutY="-1.0" prefHeight="454.0" prefWidth="534.0" style="-fx-background-color: transparent;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+               <children>
+                  <Label fx:id="firstNameLabel" prefHeight="43.0" prefWidth="72.0" text="firstname" />
+                  <Region prefHeight="200.0" prefWidth="200.0" />
+                  <Label fx:id="lastNameLabel" prefHeight="45.0" prefWidth="75.0" text="lastname" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="228.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+               <children>
+                  <JFXListView fx:id="messageListView" prefHeight="320.0" prefWidth="556.0" style="-fx-background-color: transparent;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+               <children>
+                  <TextField fx:id="messageField" prefHeight="35.0" prefWidth="430.0" promptText="Write a messaege..." style="-fx-background-color: transparent;" stylesheets="@../css/credentialsTextInput.css">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Region prefHeight="63.0" prefWidth="21.0" />
+                  <Button mnemonicParsing="false" onAction="#handleSendMessage" prefHeight="59.0" prefWidth="59.0" stylesheets="@../css/transparentButtons.css">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/send.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
